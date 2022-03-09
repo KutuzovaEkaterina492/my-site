@@ -3,9 +3,110 @@
   <head>
     <meta charset="utf-8">
     <title>Kutuzova 492</title>
+    <style type="text/css">
+      .badge { 
+        border: 1px black;
+        padding: 5px
+        background-color: blue;
+      }
+      ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.page-link {
+position: relative;
+display: block;
+padding: 1px;
+color: red;
+background-color: white;
+border: 1px solid blue;
+} 
+.card {
+    box-shadow: 0 4px 8px 0 green;
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 100%;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+.cardhover {
+    box-shadow: 0 8px 5px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding:0.5%;
+}
+.toast-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.25px 0.75px;
+    color: #6c757d;
+    background-color: rgba(255,255,255,.85);
+    background-clip: padding-box;
+    border-bottom: 1px
+ solid rgba(0,0,0,.05);
+    border-top-left-radius: calc(0.25px - 1px);
+    border-top-right-radius: calc(0.25px- 1px);
+.toast-body {
+padding: 0.75px;
+}
+    </style>
   </head>
   <body>
-    <div class="">
+      <div>
+        <h1>example heading <span class="badge">New</span></h1>
+        <h2>example heading <span class="badge">New</span></h2>
+        <h3>example heading <span class="badge">New</span></h3>
+        <h4>example heading <span class="badge">New</span></h4>
+        <h5>example heading <span class="badge">New</span></h5>
+        <h6>example heading <span class="badge">New</span></h6>
+      </div>
+      <div>
+        <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+      </div>
+      <div class="card" style="width: 20%">
+  <img src="images/bul.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>HTML CSS</b></h4>
+    <p>Architect & Engineer</p>
+  </div>
+</div>
+   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <!-- <img src="..." class="rounded mr-2" alt="...">  -->
+    <strong class="mr-auto">Сообщение</strong>
+    <small>10 секунд назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Закрыть">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body" >
+    Привет, мир! Это всплывающее сообщение.
+  </div>
+</div>
+      <div class="">
       <p>
         <strong>Lorem ipsum dolor sit amet</strong>, <i>consectetur adipisicing elit</i>, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
